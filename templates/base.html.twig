@@ -27,21 +27,21 @@
     <body>
                 {% for message in app.flashes("success") %}
 
-          <div class="alert alert-success">
+        <div class="alert alert-success">
 
-          <p>{{message}}</p>
-          
-          </div>
+        <p>{{message}}</p>
+        
+        </div>
 
         {% endfor %}
 
                 {% for message in app.flashes("error") %}
 
-          <div class="alert alert-danger">
+        <div class="alert alert-danger">
 
-          <p>{{message}}</p>
-          
-          </div>
+        <p>{{message}}</p>
+        
+        </div>
 
         {% endfor %}
         {% block body %}

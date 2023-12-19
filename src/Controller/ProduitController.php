@@ -39,6 +39,7 @@ class ProduitController extends AbstractController
         ]);
     }
 
+    
     #[Route('/new', name: 'app_new_product', methods: ['GET', 'POST'])]
     public function new(Request $request, ProduitRepository $produitRepository,SluggerInterface $slugger): Response
     {
